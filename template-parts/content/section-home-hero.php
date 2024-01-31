@@ -16,7 +16,7 @@ $background = get_sub_field('background');
   <!-- BgOverlay -->
   <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-50"></div>
   <div class="wrapper relative">
-    <div class="container">
+    <div class="box">
       <!-- Inner -->
       <div class="h-[80vh] flex flex-col justify-end items-center py-24">
         <!-- Heading -->

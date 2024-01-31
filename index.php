@@ -8,6 +8,8 @@
       <?php get_template_part('template-parts/content/section', 'socials') ?>
     <?php elseif (get_row_layout() == 'menu') : ?>
       <?php get_template_part('template-parts/content/section', 'menu') ?>
+    <?php elseif (get_row_layout() == 'textAndMedia') : ?>
+      <?php get_template_part('template-parts/content/section', 'text-and-media') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

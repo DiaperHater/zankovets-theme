@@ -51,3 +51,30 @@ function toggleMobileMenu() {
   menu.classList.toggle('left-full');
   menu.classList.toggle('left-0');
 }
+
+function playPauseVideo(player) {
+
+  const video = player.querySelector('video');
+  const playBtn = player.querySelector('button');
+
+  // If video loaded played and not paused
+  if (video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) {
+
+    video.pause();
+
+    // show btn
+    playBtn.classList.remove('hidden');
+
+  } else {
+
+    video.play();
+
+    // if button is not hidden
+    if (!playBtn.classList.contains('hidden')) {
+
+      // hide btn
+      playBtn.classList.add('hidden');
+    }
+  }
+
+}

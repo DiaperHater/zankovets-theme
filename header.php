@@ -20,7 +20,7 @@
   <!-- Header -->
   <header class="bg-neutral-900 text-white fixed top-0 left-0 w-full z-50 group/header">
     <div class="wrapper">
-      <div class="conteiner">
+      <div class="box">
         <!-- Inner -->
         <nav class="py-6 flex items-center duration-200 group-[.narrow]/header:py-3">
           <!-- Logo -->
@@ -69,7 +69,7 @@
     <!-- MobileMenu -->
     <nav class="mobile-menu absolute top-full left-full w-full h-[100vh] overflow-auto bg-neutral-900 bg-opacity-90 duration-200 lg:hidden">
       <div class="wrapper">
-        <div class="container">
+        <div class="box">
           <!-- Inner -->
           <div class="flex flex-col gap-y-16 pt-14 pb-40">
             <!-- Links -->

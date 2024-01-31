@@ -12,14 +12,14 @@
     @apply px-8 xl:px-16;
   }
 
-  .container {
+  .box {
     @apply w-[1280px] max-w-full mx-auto;
   }
 }
 
 @layer components {
   .button {
-    @apply py-3 px-12 uppercase text-white text-base leading-none flex items-center bg-yellow-500 duration-200 hover:text-black hover:bg-yellow-300;
+    @apply w-fit py-3 px-12 uppercase text-white text-base leading-none flex items-center bg-yellow-500 duration-200 hover:text-black hover:bg-yellow-300;
   }
 
   .heading {
