@@ -6,6 +6,8 @@
       <?php get_template_part('template-parts/content/section', 'home-hero') ?>
     <?php elseif (get_row_layout() == 'socials') : ?>
       <?php get_template_part('template-parts/content/section', 'socials') ?>
+    <?php elseif (get_row_layout() == 'menu') : ?>
+      <?php get_template_part('template-parts/content/section', 'menu') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

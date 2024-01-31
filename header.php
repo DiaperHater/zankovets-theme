@@ -104,4 +104,4 @@
     </nav>
   </header>
 
-  <main class="h-[120vh] mt-[76px] lg:mt-[88px]">
+  <main class="mt-[76px] lg:mt-[88px]">
