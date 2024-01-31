@@ -4,6 +4,8 @@
   <?php while (have_rows('content')) : the_row(); ?>
     <?php if (get_row_layout() == 'homeHero') : ?>
       <?php get_template_part('template-parts/content/section', 'home-hero') ?>
+    <?php elseif (get_row_layout() == 'socials') : ?>
+      <?php get_template_part('template-parts/content/section', 'socials') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
