@@ -6,7 +6,7 @@ $video = get_sub_field('video');
 ?>
 
 <!-- TextAndMedia -->
-<section class="py-32 bg-neutral-300 lg:py-52">
+<section class="py-32 bg-neutral-300">
   <div class="wrapper">
     <div class="box">
       <!-- Inner -->

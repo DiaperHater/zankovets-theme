@@ -34,6 +34,44 @@
   });
 })();
 
+// Swiper
+(function () {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    freeMode: {
+      enabled: true,
+      sticky: false
+    },
+    mousewheel: {
+      forceToAxis: true,
+      releaseOnEdges: true
+    },
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      375: {
+        slidesPerView: 4
+      },
+      640: {
+        slidesPerView: 6,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 56,
+      },
+      1280: {
+        slidesPerView: 6,
+        spaceBetween: 120,
+      },
+    }
+  });
+})();
+
 function burgerOnClick() {
 
   toggleBurger();

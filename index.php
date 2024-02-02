@@ -10,6 +10,8 @@
       <?php get_template_part('template-parts/content/section', 'menu') ?>
     <?php elseif (get_row_layout() == 'textAndMedia') : ?>
       <?php get_template_part('template-parts/content/section', 'text-and-media') ?>
+    <?php elseif (get_row_layout() == 'certificates') : ?>
+      <?php get_template_part('template-parts/content/section', 'certificates') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
