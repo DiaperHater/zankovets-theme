@@ -12,6 +12,8 @@
       <?php get_template_part('template-parts/content/section', 'text-and-media') ?>
     <?php elseif (get_row_layout() == 'certificates') : ?>
       <?php get_template_part('template-parts/content/section', 'certificates') ?>
+    <?php elseif (get_row_layout() == 'clients') : ?>
+      <?php get_template_part('template-parts/content/section', 'clients') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

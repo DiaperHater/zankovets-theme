@@ -36,7 +36,7 @@
 
 // Swiper
 (function () {
-  const swiper = new Swiper('.swiper', {
+  const swiperCertificates = new Swiper('.swiper', {
     slidesPerView: 2,
     spaceBetween: 24,
     loop: true,
@@ -68,6 +68,37 @@
         slidesPerView: 6,
         spaceBetween: 120,
       },
+    }
+  });
+
+  const swiperClients = new Swiper('.swiper-clients', {
+    slidesPerView: 1.1,
+    spaceBetween: 12,
+    freeMode: {
+      enabled: true,
+      sticky: false
+    },
+    mousewheel: {
+      forceToAxis: true,
+      releaseOnEdges: true
+    },
+    grabCursor: true,
+    breakpoints: {
+      440: {
+        slidesPerView: 1.5,
+        spaceBetween: 12,
+      },
+      560: {
+        slidesPerView: 2.2
+      },
+      640: {
+        slidesPerView: 2.2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 3.2,
+        spaceBetween: 24,
+      }
     }
   });
 })();
