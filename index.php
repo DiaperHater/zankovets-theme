@@ -14,6 +14,8 @@
       <?php get_template_part('template-parts/content/section', 'certificates') ?>
     <?php elseif (get_row_layout() == 'clients') : ?>
       <?php get_template_part('template-parts/content/section', 'clients') ?>
+    <?php elseif (get_row_layout() == 'numbers') : ?>
+      <?php get_template_part('template-parts/content/section', 'numbers') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
