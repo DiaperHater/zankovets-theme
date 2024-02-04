@@ -1,5 +1,10 @@
 <?php get_header() ?>
 
+<?php
+
+$row_layout = get_row_layout();
+?>
+
 <?php if (have_rows('content')) : ?>
   <?php while (have_rows('content')) : the_row(); ?>
     <?php if (get_row_layout() == 'homeHero') : ?>
@@ -16,6 +21,10 @@
       <?php get_template_part('template-parts/content/section', 'clients') ?>
     <?php elseif (get_row_layout() == 'numbers') : ?>
       <?php get_template_part('template-parts/content/section', 'numbers') ?>
+    <?php elseif (get_row_layout() == 'testimonials') : ?>
+      <?php get_template_part('template-parts/content/section', 'testimonials') ?>
+    <?php elseif (get_row_layout() == 'cta') : ?>
+      <?php get_template_part('template-parts/content/section', 'cta') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>

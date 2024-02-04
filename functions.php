@@ -40,5 +40,19 @@ function register_custom_post_types()
       'supports' => array('title')
     )
   );
+
+  register_post_type(
+    'testimonial',
+    array(
+      'labels'      => array(
+        'name'          => __('Testimonials', 'zankovets'),
+        'singular_name' => __('Testimonial', 'zankovets'),
+      ),
+      'public'      => true,
+      'has_archive' => false,
+      'menu_icon' => 'dashicons-testimonial',
+      'supports' => array('title')
+    )
+  );
 }
 add_action('init', 'register_custom_post_types');

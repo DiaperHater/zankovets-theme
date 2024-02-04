@@ -101,6 +101,30 @@
       }
     }
   });
+
+  const swiperTestimonials = new Swiper('.swiper-testimonials', {
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+    freeMode: {
+      enabled: true,
+      sticky: false
+    },
+    mousewheel: {
+      forceToAxis: true,
+      releaseOnEdges: true
+    },
+    grabCursor: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 1.4,
+        spaceBetween: 48,
+      },
+      1024: {
+        slidesPerView: 2.25,
+        spaceBetween: 48,
+      }
+    }
+  });
 })();
 
 function burgerOnClick() {
