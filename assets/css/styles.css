@@ -1002,6 +1002,10 @@ html {
   height: 100%;
 }
 
+.h-\[340px\] {
+  height: 340px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2108,6 +2112,10 @@ html {
   --tw-bg-opacity: 0.9;
 }
 
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2445,6 +2453,14 @@ html {
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
