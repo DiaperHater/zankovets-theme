@@ -1006,6 +1006,10 @@ html {
   height: 340px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
