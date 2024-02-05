@@ -8,6 +8,10 @@
     color: white;
   }
 
+  body {
+    @apply bg-neutral-900;
+  }
+
   .wrapper {
     @apply px-4 xl:px-16;
   }

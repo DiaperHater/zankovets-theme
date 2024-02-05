@@ -29,7 +29,7 @@ function print_card($card)
 ?>
 
 <!-- Clients -->
-<section class="py-24 overflow-hidden">
+<section class="py-24 overflow-hidden bg-white">
   <div class="wrapper">
     <div class="box">
       <!-- Carousel -->

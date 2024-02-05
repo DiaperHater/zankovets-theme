@@ -449,6 +449,11 @@ html {
   color: white;
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
 .wrapper {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -826,8 +831,8 @@ html {
   margin-bottom: 4rem;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mb-4 {
@@ -860,10 +865,6 @@ html {
 
 .mt-\[76px\] {
   margin-top: 76px;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
 }
 
 .box-border {
@@ -1000,14 +1001,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[340px\] {
-  height: 340px;
-}
-
-.h-\[400px\] {
-  height: 400px;
 }
 
 .w-1\/2 {
@@ -2112,12 +2105,12 @@ html {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .decoration-slice {
@@ -2457,10 +2450,6 @@ html {
 
 .leading-none {
   line-height: 1;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .leading-normal {
@@ -3031,17 +3020,13 @@ html {
     width: 140px;
   }
 
-  .sm\:w-\[150px\] {
-    width: 150px;
+  .sm\:-translate-y-1\/2 {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .sm\:translate-x-0 {
     --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:-translate-y-1\/2 {
-    --tw-translate-y: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -3053,24 +3038,12 @@ html {
     gap: 1.5rem;
   }
 
-  .sm\:pl-\[70px\] {
-    padding-left: 70px;
+  .sm\:pl-\[160px\] {
+    padding-left: 160px;
   }
 
   .sm\:pt-0 {
     padding-top: 0px;
-  }
-
-  .sm\:pl-\[170px\] {
-    padding-left: 170px;
-  }
-
-  .sm\:pl-\[150px\] {
-    padding-left: 150px;
-  }
-
-  .sm\:pl-\[160px\] {
-    padding-left: 160px;
   }
 
   .sm\:underline {
