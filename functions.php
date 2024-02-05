@@ -25,6 +25,13 @@ if (!is_admin()) {
   add_action('after_setup_theme', 'zankovets_theme_setup');
 }
 
+function zankovets_admin_theme_setup()
+{
+  add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'zankovets_admin_theme_setup');
+
+
 function register_custom_post_types()
 {
   register_post_type(

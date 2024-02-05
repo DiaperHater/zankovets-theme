@@ -896,6 +896,10 @@ body {
   margin-top: 11rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -999,6 +1003,10 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -1034,6 +1042,10 @@ body {
 
 .h-full {
   height: 100%;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-1\/2 {
@@ -1670,6 +1682,14 @@ body {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2992,6 +3012,14 @@ body {
   text-align: center;
 }
 
+.group:first-child .group-first\:mt-auto {
+  margin-top: auto;
+}
+
+.group:first-child .group-first\:justify-self-end {
+  justify-self: end;
+}
+
 .group:hover .group-hover\:scale-110 {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -3243,6 +3271,10 @@ body {
     flex-shrink: 0;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:items-end {
     align-items: flex-end;
   }
@@ -3253,6 +3285,11 @@ body {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .md\:px-6 {
@@ -3267,6 +3304,11 @@ body {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -3357,6 +3399,62 @@ body {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .xl\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .first\:xl\:col-span-3:first-child {
+    grid-column: span 3 / span 3;
+  }
+
+  .first\:xl\:row-span-2:first-child {
+    grid-row: span 2 / span 2;
+  }
+
+  .group:first-child .xl\:group-first\:mt-auto {
+    margin-top: auto;
+  }
+
+  .group:first-child .xl\:group-first\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .group:first-child .xl\:group-first\:aspect-\[2\/4\] {
+    aspect-ratio: 2/4;
+  }
+
+  .group:first-child .xl\:group-first\:aspect-\[4\/3\] {
+    aspect-ratio: 4/3;
   }
 }
 
