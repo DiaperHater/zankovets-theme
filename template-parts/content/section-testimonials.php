@@ -43,7 +43,7 @@ function print_testimonial($id)
 
 
 <!-- Testimonials -->
-<section class="py-24 bg-white">
+<section class="py-24 bg-white overflow-hidden">
   <div class="wrapper">
     <div class="box">
       <!-- Inner -->

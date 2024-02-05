@@ -33,4 +33,36 @@
   .subheading {
     @apply text-lg font-semibold md:text-xl;
   }
+
+  /* Contact Form */
+
+  .form-wrapper {}
+
+  .wpcf7-form {
+    @apply grid gap-6 sm:grid-cols-6;
+  }
+
+  .wpcf7-form-control-wrap {
+    @apply block w-full sm:col-span-3;
+  }
+
+  .wpcf7-form-control-wrap[data-name="your-message"] {
+    @apply sm:col-span-6;
+  }
+
+  .custom-form-input {
+    @apply block bg-neutral-700 w-full text-white font-light p-2 outline-none;
+  }
+
+  .custom-form-input:focus {
+    @apply outline-dashed outline-yellow-500;
+  }
+
+  textarea.custom-form-input {
+    @apply resize-none;
+  }
+
+  .wpcf7-response-output {
+    @apply md:col-span-6;
+  }
 }
