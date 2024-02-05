@@ -23,7 +23,7 @@
 
 @layer components {
   .button {
-    @apply w-fit py-3 px-12 uppercase text-white text-base leading-none flex items-center bg-yellow-500 duration-200 hover:text-black hover:bg-yellow-300;
+    @apply w-fit py-3 px-12 uppercase text-white text-base leading-none flex items-center justify-center bg-yellow-500 duration-200 hover:text-black hover:bg-yellow-300;
   }
 
   .heading {

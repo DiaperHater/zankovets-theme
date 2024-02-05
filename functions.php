@@ -54,5 +54,19 @@ function register_custom_post_types()
       'supports' => array('title')
     )
   );
+
+  register_post_type(
+    'book',
+    array(
+      'labels'      => array(
+        'name'          => __('Books', 'zankovets'),
+        'singular_name' => __('Book', 'zankovets'),
+      ),
+      'public'      => true,
+      'has_archive' => false,
+      'menu_icon' => 'dashicons-book-alt',
+      'supports' => array('title')
+    )
+  );
 }
 add_action('init', 'register_custom_post_types');

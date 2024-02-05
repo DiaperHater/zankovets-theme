@@ -25,6 +25,8 @@ $row_layout = get_row_layout();
       <?php get_template_part('template-parts/content/section', 'testimonials') ?>
     <?php elseif (get_row_layout() == 'cta') : ?>
       <?php get_template_part('template-parts/content/section', 'cta') ?>
+    <?php elseif (get_row_layout() == 'books') : ?>
+      <?php get_template_part('template-parts/content/section', 'books') ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
