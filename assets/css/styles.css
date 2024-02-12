@@ -613,26 +613,42 @@ body {
   width: fit-content;
   align-items: center;
   justify-content: center;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 3rem;
   padding-right: 3rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-duration: 200ms;
+  position: relative;
 }
 
-.button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
+  background-size: auto 100%;
+  z-index: 1;
+  transition: .2s linear;
+}
+
+.button:hover::before {
+  background-position-x: right 0;
 }
 
 .heading {
@@ -3030,26 +3046,62 @@ textarea.custom-form-input {
     width: fit-content;
     align-items: center;
     justify-content: center;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(234 179 8 / var(--tw-border-opacity));
     --tw-bg-opacity: 1;
-    background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity));
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 3rem;
     padding-right: 3rem;
     font-size: 1rem;
     line-height: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     line-height: 1;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
     transition-duration: 200ms;
+    position: relative;
   }
 
-  .lg\:button:hover {
+  .lg\:button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
+    background-size: auto 100%;
+    z-index: 1;
+    transition: .2s linear;
+  }
+
+  .lg\:button:hover::before {
+    background-position-x: right 0;
+  }
+
+  .lg\:button--yellow {
     --tw-bg-opacity: 1;
     background-color: rgb(253 224 71 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
+    color: rgb(23 23 23 / var(--tw-text-opacity));
+  }
+
+  .lg\:button--yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/arrow-black-right.svg') no-repeat center left 8px;
+    background-size: auto 100%;
+    z-index: 1;
+    transition: .2s linear;
   }
 }
 

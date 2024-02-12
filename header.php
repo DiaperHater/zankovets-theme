@@ -53,7 +53,7 @@
               <div class="w-full h-1 bg-white duration-200 group-hover:bg-yellow-500 group-[.active]:-translate-x-full group-[.active]:opacity-0 group-[.active]:invisible"></div>
               <div class="w-full h-1 bg-white duration-200 origin-bottom-right group-hover:bg-yellow-500 group-[.active]:rotate-45"></div>
             </button>
-            <a href="#" class="hidden lg:block lg:button">
+            <a href="#" class="hidden lg:block lg:button lg:button--yellow">
               contact
             </a>
             <!-- LangSwitch -->

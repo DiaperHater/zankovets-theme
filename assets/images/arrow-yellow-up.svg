@@ -3,14 +3,12 @@
 <rect width="420" height="127" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_847266_555)">
-<path d="M210 0L473.183 125.25H-53.183L210 0Z" fill="#F2E852"/>
-<path d="M210 25L473.183 150.25H-53.183L210 25Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M473.182 125.25L210 0L-53.1831 125.25H-0.651614L210 25L420.651 125.25H473.182Z" fill="#F2E852"/>
 </g>
 <mask id="mask1_847266_555" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="50" width="420" height="127">
 <rect y="50" width="420" height="127" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask1_847266_555)">
-<path d="M210 50L473.183 175.25H-53.183L210 50Z" fill="#F2E852"/>
-<path d="M210 75L473.183 200.25H-53.183L210 75Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M473.182 175.25L210 50L-53.1831 175.25H-0.651614L210 75L420.651 175.25H473.182Z" fill="#F2E852"/>
 </g>
 </svg>
