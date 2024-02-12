@@ -24,24 +24,39 @@
         <!-- Inner -->
         <nav class="py-6 flex items-center duration-200 group-[.narrow]/header:py-3">
           <!-- Logo -->
-          <a href="<?= home_url() ?>" class="text-2xl leading-none font-bold uppercase duration-200 hover:text-yellow-500 mr-12">
+          <a href="<?= home_url() ?>" class="text-2xl text-yellow-400 leading-none font-bold uppercase duration-200 hover:text-yellow-500 mr-12">
             Zankovets
           </a>
+          <!-- ArrowDecor -->
+          <svg viewBox="0 0 177 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[160px] h-full xl:left-[240px]">
+            <mask id="mask0_847268_633" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="49" y="0" width="128" height="420">
+              <rect x="177" y="3.05176e-05" width="420" height="127" transform="rotate(90 177 3.05176e-05)" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_847268_633)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.7495 473.183L177 210L51.7495 -53.1828L51.7495 -0.651279L152 210L51.7495 420.651L51.7495 473.183Z" class="fill-yellow-400" />
+            </g>
+            <mask id="mask1_847268_633" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="0" width="128" height="420">
+              <rect x="127" y="3.05176e-05" width="420" height="127" transform="rotate(90 127 3.05176e-05)" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask1_847268_633)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74951 473.183L127 210L1.74951 -53.1828L1.74951 -0.651279L102 210L1.74951 420.651L1.74951 473.183Z" class="fill-yellow-400" />
+            </g>
+          </svg>
           <!-- Links -->
           <ul class="hidden lg:flex lg:items-center lg:gap-x-4 lg:ml-auto">
-            <a href="#" class="text-base uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="#" class="text-base text-yellow-400 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               About
             </a>
-            <a href="#" class="text-base uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="#" class="text-base text-yellow-400 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Services
             </a>
-            <a href="#" class="text-base uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="#" class="text-base text-yellow-400 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Blog
             </a>
-            <a href="#" class="text-base uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="#" class="text-base text-yellow-400 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Scientific Articles
             </a>
-            <a href="#" class="text-base uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="#" class="text-base text-yellow-400 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Books
             </a>
           </ul>

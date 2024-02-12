@@ -644,11 +644,11 @@ body {
   background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
   background-size: auto 100%;
   z-index: 1;
-  transition: .2s linear;
+  transition: .4s cubic-bezier(.68, -0.55, .85, .85);
 }
 
 .button:hover::before {
-  background-position-x: right 0;
+  background-position-x: left 130%;
 }
 
 .heading {
@@ -817,6 +817,10 @@ textarea.custom-form-input {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-\[160px\] {
+  left: 160px;
 }
 
 .left-full {
@@ -2343,6 +2347,10 @@ textarea.custom-form-input {
   background-origin: content-box;
 }
 
+.fill-yellow-400 {
+  fill: #facc15;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2641,6 +2649,11 @@ textarea.custom-form-input {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3077,11 +3090,11 @@ textarea.custom-form-input {
     background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
     background-size: auto 100%;
     z-index: 1;
-    transition: .2s linear;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
   }
 
   .lg\:button:hover::before {
-    background-position-x: right 0;
+    background-position-x: left 130%;
   }
 
   .lg\:button--yellow {
@@ -3101,7 +3114,7 @@ textarea.custom-form-input {
     background: url('../images/arrow-black-right.svg') no-repeat center left 8px;
     background-size: auto 100%;
     z-index: 1;
-    transition: .2s linear;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
   }
 }
 
@@ -3458,6 +3471,10 @@ textarea.custom-form-input {
 }
 
 @media (min-width: 1280px) {
+  .xl\:left-\[240px\] {
+    left: 240px;
+  }
+
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }

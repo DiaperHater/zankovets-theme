@@ -38,11 +38,11 @@
     background: url('../images/arrow-yellow-right.svg') no-repeat center left 8px;
     background-size: auto 100%;
     z-index: 1;
-    transition: .2s linear;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
   }
 
   .button:hover::before {
-    background-position-x: right 0;
+    background-position-x: left 130%;
   }
 
   .button--yellow {
@@ -59,7 +59,7 @@
     background: url('../images/arrow-black-right.svg') no-repeat center left 8px;
     background-size: auto 100%;
     z-index: 1;
-    transition: .2s linear;
+    transition: .4s cubic-bezier(.68, -0.55, .85, .85);
   }
 
   .heading {
