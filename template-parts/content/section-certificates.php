@@ -4,7 +4,7 @@ $heading = get_sub_field('heading');
 ?>
 
 <!-- Certificates -->
-<section class="py-24 bg-neutral-900">
+<section class="py-8 bg-neutral-900">
   <!-- Heading -->
   <div class="wrapper">
     <div class="box">
@@ -34,7 +34,7 @@ $heading = get_sub_field('heading');
         $image_alt = $image['alt']; ?>
 
         <!-- Slide -->
-        <div class="swiper-slide max-w-[140px]">
+        <div class="swiper-slide max-w-[180px]">
           <!-- CertImage -->
           <img src="<?= $image_url ?>" alt="<?= $image_alt ?>" class="">
         </div>
