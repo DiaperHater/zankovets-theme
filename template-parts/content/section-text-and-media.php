@@ -6,7 +6,7 @@ $video = get_sub_field('video');
 ?>
 
 <!-- TextAndMedia -->
-<section class="py-16 bg-neutral-200 border-y-[64px] border-yellow-400 relative overflow-hidden">
+<section class="py-16 bg-white border-y-[64px] border-yellow-400 relative overflow-hidden">
   <!-- ArrowDecor -->
   <svg viewBox="0 0 177 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 h-[calc(100%+1px)] left-[160px] xl:left-[240px]">
     <mask id="mask0_847268_633" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="49" y="0" width="128" height="420">
