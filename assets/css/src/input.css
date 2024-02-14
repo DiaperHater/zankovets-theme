@@ -19,6 +19,10 @@
   .box {
     @apply w-[1280px] max-w-full mx-auto;
   }
+
+  .box-sm {
+    @apply w-[920px] max-w-full mx-auto;
+  }
 }
 
 @layer components {
@@ -69,6 +73,7 @@
   .subheading {
     @apply text-lg font-semibold md:text-xl;
   }
+
 
   /* Contact Form */
 

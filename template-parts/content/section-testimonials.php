@@ -16,23 +16,23 @@ function print_testimonial($id)
   $text = get_field('text', $id);
 ?>
   <!-- Slide -->
-  <div class="swiper-slide bg-neutral-700 px-4 pt-4 pb-8">
+  <div class="swiper-slide px-4 pt-4 pb-8 border-2 border-yellow-300 rounded-xl shadow-xl">
     <!-- Head -->
     <div class="flex relative pt-16 mb-8 sm:pt-0 sm:pl-[160px]">
       <!-- Ava -->
-      <img src="<?= $ava['sizes']['thumbnail'] ?>" alt="<?= $ava['alt'] ?>" class="w-[120px] rounded-full absolute top-0 left-1/2 -translate-y-2/3 -translate-x-1/2 sm:-translate-y-1/2 sm:left-0 sm:translate-x-0 sm:w-[140px]">
+      <img src="<?= $ava['sizes']['thumbnail'] ?>" alt="<?= $ava['alt'] ?>" class="shadow-xl w-[120px] rounded-full absolute top-0 left-1/2 -translate-y-2/3 -translate-x-1/2 sm:-translate-y-[57%] sm:left-0 sm:translate-x-0 sm:w-[140px]">
       <!-- Info -->
       <div class="">
-        <p class="text-2xl mb-1.5">
+        <p class="text-2xl mb-1.5 text-neutral-900">
           <?= $name ?>
         </p>
-        <p class="text-neutral-300">
+        <p class="text-neutral-400">
           <?= $position ?>
         </p>
       </div>
     </div>
     <!-- Body -->
-    <p class="italic font-light">
+    <p class="italic font-light text-neutral-900 text-2xl">
       "<?= $text ?>"
     </p>
   </div>

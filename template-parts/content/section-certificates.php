@@ -4,11 +4,11 @@ $heading = get_sub_field('heading');
 ?>
 
 <!-- Certificates -->
-<section class="py-8 bg-neutral-900">
+<section class="py-12 bg-neutral-900">
   <!-- Heading -->
   <div class="wrapper">
     <div class="box">
-      <h2 class="heading text-white mb-16 text-center">
+      <h2 class="heading text-yellow-300 mb-16 text-center">
         <?= $heading ?>
       </h2>
     </div>

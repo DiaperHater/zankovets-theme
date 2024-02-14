@@ -15,13 +15,13 @@ $articles = get_sub_field('articles');
         <img src="<?= $services['image']['sizes']['medium_large'] ?>" alt="" class="absolute top-0 left-0 w-full h-full object-cover object-center duration-300 group-hover:scale-110">
       </picture>
       <!-- BViewverlay -->
-      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-50 duration-300 group-hover:backdrop-blur-sm"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 duration-300 group-hover:backdrop-blur-sm"></div>
       <!-- Body -->
-      <div class="flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
+      <div class="text-yellow-300 flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
         <!-- Title -->
         <h3 class="text-4xl font-bold mb-4">Services</h3>
         <!-- Description -->
-        <p class="text-center max-w-[500px] mb-6">
+        <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $services['description'] ?>
         </p>
         <a href="#" class="button">View</a>
@@ -34,13 +34,13 @@ $articles = get_sub_field('articles');
         <img src="<?= $books['image']['sizes']['medium_large'] ?>" alt="" class="absolute top-0 left-0 w-full h-full object-cover object-center duration-300 group-hover:scale-110">
       </picture>
       <!-- BViewverlay -->
-      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-50 duration-300 group-hover:backdrop-blur-sm"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 duration-300 group-hover:backdrop-blur-sm"></div>
       <!-- Body -->
-      <div class="flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
+      <div class="text-yellow-300 flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
         <!-- Title -->
         <h3 class="text-4xl font-bold mb-4">Books</h3>
         <!-- Description -->
-        <p class="text-center max-w-[500px] mb-6">
+        <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $books['description'] ?>
         </p>
         <a href="#" class="button">View</a>
@@ -53,13 +53,13 @@ $articles = get_sub_field('articles');
         <img src="<?= $blog['image']['sizes']['medium_large'] ?>" alt="" class="absolute top-0 left-0 w-full h-full object-cover object-center duration-300 group-hover:scale-110">
       </picture>
       <!-- BViewverlay -->
-      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-50 duration-300 group-hover:backdrop-blur-sm"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 duration-300 group-hover:backdrop-blur-sm"></div>
       <!-- Body -->
-      <div class="flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
+      <div class="text-yellow-300 flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
         <!-- Title -->
         <h3 class="text-4xl font-bold mb-4">Blog</h3>
         <!-- Description -->
-        <p class="text-center max-w-[500px] mb-6">
+        <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $blog['description'] ?>
         </p>
         <a href="#" class="button">View</a>
@@ -72,13 +72,13 @@ $articles = get_sub_field('articles');
         <img src="<?= $articles['image']['sizes']['medium_large'] ?>" alt="" class="absolute top-0 left-0 w-full h-full object-cover object-center duration-300 group-hover:scale-110">
       </picture>
       <!-- BViewverlay -->
-      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-50 duration-300 group-hover:backdrop-blur-sm"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 duration-300 group-hover:backdrop-blur-sm"></div>
       <!-- Body -->
-      <div class="flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
+      <div class="text-yellow-300 flex flex-col items-center justify-center h-[220px] relative lg:h-[300px]">
         <!-- Title -->
         <h3 class="text-4xl font-bold mb-4">Scientific Articles</h3>
         <!-- Description -->
-        <p class="text-center max-w-[500px] mb-6">
+        <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $articles['description'] ?>
         </p>
         <a href="#" class="button">View</a>
