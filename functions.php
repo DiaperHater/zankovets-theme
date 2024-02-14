@@ -16,7 +16,7 @@ if (!is_admin()) {
     // Styles
     wp_enqueue_style('swiper-styles', get_theme_file_uri('/assets/css/swiper.min.css'), array(), '10.0.5', 'all');
     wp_enqueue_style('zankovets-fonts', get_theme_file_uri('/assets/css/fonts.css'), array(), S_VERSION, 'all');
-    wp_enqueue_style('zankovets-styles', get_theme_file_uri('/assets/css/styles.css'), array('zankovets-fonts'), S_VERSION, 'all');
+    wp_enqueue_style('zankovets-styles', get_theme_file_uri('/assets/css/styles.css'), array('zankovets-fonts', 'wp-block-library'), S_VERSION, 'all');
 
     // Scripts    
     wp_enqueue_script('swiper-script', get_theme_file_uri('/assets/js/swiper-bundle.min.js'), array(), '10.0.5', true);
@@ -77,6 +77,20 @@ function register_custom_post_types()
   );
 }
 add_action('init', 'register_custom_post_types');
+
+// Shortcodes
+function register_shortcodes()
+{
+
+  function print_socials($atts)
+  {
+    ob_start();
+    get_template_part('template-parts/content/section', 'socials');
+    return ob_get_clean();
+  }
+  add_shortcode('socials', 'print_socials');
+}
+add_action('init', 'register_shortcodes');
 
 // CF7
 add_filter('wpcf7_autop_or_not', '__return_false');

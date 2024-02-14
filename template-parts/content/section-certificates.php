@@ -1,6 +1,6 @@
 <?php
 
-$heading = get_sub_field('heading');
+$heading = get_sub_field('heading') ?: 'Certificates';
 ?>
 
 <!-- Certificates -->

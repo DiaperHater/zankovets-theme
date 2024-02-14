@@ -106,4 +106,25 @@
   .wpcf7-response-output {
     @apply md:col-span-6;
   }
+
+  /* Prose Content */
+
+  .prose {
+    @apply max-w-full
+  }
+
+  .prose h2 {
+    margin-top: 0;
+  }
+
+  .prose figure {
+    @apply border-2 border-yellow-400 rounded-xl shadow-lg overflow-hidden;
+  }
+
+  .prose figure.alignleft,
+  .prose figure.alignright,
+  .prose figure.alignnone,
+  .prose figure.aligncenter {
+    @apply max-lg:float-none max-lg:mx-auto;
+  }
 }
