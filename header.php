@@ -44,13 +44,13 @@
           </svg>
           <!-- Links -->
           <ul class="hidden lg:flex lg:items-center lg:gap-x-4 lg:ml-auto">
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
+            <a href="/about" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               About
             </a>
             <a href="#" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Services
             </a>
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
+            <a href="/blog" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Blog
             </a>
             <a href="#" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
@@ -89,13 +89,13 @@
           <div class="flex flex-col gap-y-16 pt-14 pb-40">
             <!-- Links -->
             <ul class="flex flex-col gap-y-4">
-              <a href="#" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+              <a href="/about" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
                 About
               </a>
               <a href="#" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
                 Services
               </a>
-              <a href="#" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+              <a href="/blog" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
                 Blog
               </a>
               <a href="#" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">

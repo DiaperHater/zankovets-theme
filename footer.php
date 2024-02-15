@@ -12,13 +12,13 @@
           </a>
           <!-- leftColumn -->
           <div class="flex flex-col gap-y-6 items-center mb-6 md:col-span-3 md:m-0 md:row-start-1 lg:flex-row lg:gap-x-6 lg: justify-end">
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="/about" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               About
             </a>
             <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               Services
             </a>
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="/blog" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               Blog
             </a>
           </div>

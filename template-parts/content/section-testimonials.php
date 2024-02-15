@@ -4,7 +4,7 @@ $testimonials_posts_ids = get_posts(array(
   'post_type' => 'testimonial',
   'posts_per_page' => -1,
   'post_status' => 'publish',
-  'return_fields' => 'ids'
+  'fields' => 'ids'
 ));
 
 

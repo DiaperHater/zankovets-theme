@@ -7,6 +7,7 @@ if (!defined('S_VERSION')) {
 }
 
 add_theme_support('title-tag');
+add_post_type_support('page', 'excerpt');
 
 if (!is_admin()) {
 
@@ -58,7 +59,11 @@ function register_custom_post_types()
       'public'      => true,
       'has_archive' => false,
       'menu_icon' => 'dashicons-testimonial',
-      'supports' => array('title')
+      'supports' => array('title'),
+      'rewrite' => array(
+        'with_front' => false,
+        'slug' => 'testimonials'
+      )
     )
   );
 
