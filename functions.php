@@ -32,7 +32,7 @@ function zankovets_admin_theme_setup()
 }
 add_action('after_setup_theme', 'zankovets_admin_theme_setup');
 
-
+// CPT
 function register_custom_post_types()
 {
   register_post_type(
@@ -45,7 +45,11 @@ function register_custom_post_types()
       'public'      => true,
       'has_archive' => false,
       'menu_icon' => 'dashicons-awards',
-      'supports' => array('title')
+      'supports' => array('title'),
+      'rewrite' => array(
+        'with_front' => false,
+        'slug' => 'certification'
+      )
     )
   );
 
@@ -77,7 +81,30 @@ function register_custom_post_types()
       'public'      => true,
       'has_archive' => false,
       'menu_icon' => 'dashicons-book-alt',
-      'supports' => array('title')
+      'supports' => array('title'),
+      'rewrite' => array(
+        'with_front' => false,
+        'slug' => 'books'
+      )
+    )
+  );
+
+  register_post_type(
+    'article',
+    array(
+      'labels'      => array(
+        'name'          => __('Articles', 'zankovets'),
+        'singular_name' => __('Article', 'zankovets'),
+      ),
+      'public'      => true,
+      'has_archive' => false,
+      'menu_icon' => 'dashicons-analytics',
+      'rewrite' => array(
+        'with_front' => false,
+        'slug' => 'articles'
+      ),
+      'show_in_rest' => true,
+      'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
     )
   );
 }

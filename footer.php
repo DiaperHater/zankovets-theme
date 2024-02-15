@@ -24,7 +24,7 @@
           </div>
           <!-- rightColumn -->
           <div class="flex flex-col gap-y-6 items-center md:col-span-3 md:m-0 lg:flex-row lg:gap-x-6">
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="/articles" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               Scientific Articles
             </a>
             <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
