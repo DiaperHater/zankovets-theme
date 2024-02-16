@@ -60,6 +60,7 @@ function register_custom_post_types()
         'name'          => __('Testimonials', 'zankovets'),
         'singular_name' => __('Testimonial', 'zankovets'),
       ),
+      'taxonomies' => array('testimonial-category'),
       'public'      => true,
       'has_archive' => false,
       'menu_icon' => 'dashicons-testimonial',
@@ -81,11 +82,13 @@ function register_custom_post_types()
       'public'      => true,
       'has_archive' => false,
       'menu_icon' => 'dashicons-book-alt',
-      'supports' => array('title'),
+      'supports' => array('title', 'thumbnail', 'excerpt'),
       'rewrite' => array(
         'with_front' => false,
         'slug' => 'books'
-      )
+      ),
+      'show_in_rest' => true,
+      'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
     )
   );
 
@@ -109,6 +112,16 @@ function register_custom_post_types()
   );
 }
 add_action('init', 'register_custom_post_types');
+
+//Custom Taxonomies
+function register_custom_taxonomies()
+{
+  register_taxonomy('testimonial-category', 'testimonial', array(
+    'label' => 'Category',
+    'hierarchical' => true
+  ));
+}
+add_action('init', 'register_custom_taxonomies');
 
 // Shortcodes
 function register_shortcodes()

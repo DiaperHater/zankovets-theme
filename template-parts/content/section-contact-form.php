@@ -9,7 +9,7 @@
           Got questions?
         </h2>
         <!-- Form -->
-        <div class="form-wrapper">
+        <div class="contact-form-wrapper">
           <?php echo do_shortcode('[contact-form-7 id="cdbc2df" title="Contact form 1"]'); ?>
         </div>
       </div>

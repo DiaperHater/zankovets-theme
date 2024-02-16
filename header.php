@@ -56,7 +56,7 @@
             <a href="/articles" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Scientific Articles
             </a>
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
+            <a href="/books" class="text-base text-yellow-300 uppercase duration-200  decoration-4 underline-offset-4 hover:text-yellow-500">
               Books
             </a>
           </ul>
@@ -101,7 +101,7 @@
               <a href="/articles" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
                 Scientific Articles
               </a>
-              <a href="#" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+              <a href="/books" class="text-lg text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
                 Books
               </a>
             </ul>

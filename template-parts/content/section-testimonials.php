@@ -1,11 +1,28 @@
 <?php
 
-$testimonials_posts_ids = get_posts(array(
+$args = wp_parse_args($args, array(
+  'heading' => 'Testimonials',
+  'terms' => array()
+));
+
+$params = array(
   'post_type' => 'testimonial',
   'posts_per_page' => -1,
   'post_status' => 'publish',
   'fields' => 'ids'
-));
+);
+
+if (!empty($args['terms'])) {
+  $params['tax_query'] = array(
+    array(
+      'taxonomy' => 'testimonial-category',
+      'field'    => 'slug',
+      'terms'    => $args['terms']
+    )
+  );
+}
+
+$testimonials_posts_ids = get_posts($params);
 
 
 function print_testimonial($id)
@@ -49,7 +66,7 @@ function print_testimonial($id)
       <!-- Inner -->
       <div class="">
         <h2 class="heading text-neutral-900 text-center mb-32">
-          Testimonials
+          <?= $args['heading'] ?: 'Testimonials' ?>
         </h2>
         <!-- Slider -->
         <div class="swiper-testimonials">

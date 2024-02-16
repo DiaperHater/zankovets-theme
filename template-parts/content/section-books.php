@@ -2,40 +2,8 @@
 
 $heading = get_sub_field('heading');
 $subheading = get_sub_field('subheading');
-$books = get_sub_field('books');
-
-function print_book_card($id)
-{
-
-  $title = get_the_title($id);
-  $description = get_field('description', $id);
-  $cover = get_field('cover', $id);
-?>
-  <!-- Item -->
-  <div class="bg-white px-4 py-12 mt-44 w-96 max-w-full border-2 border-yellow-300 rounded-xl shadow-lg ">
-    <!-- Image -->
-    <div class="h-32 overflow-visible flex items-end justify-center mb-6">
-      <img src="<?= $cover['sizes']['medium'] ?>" alt="<?= $cover['alt'] ?>" class="w-[200px]">
-    </div>
-    <div class="text-neutral-900">
-      <h3 class="text-3xl font-bold mb-4 text-center">
-        <?= $title ?>
-      </h3>
-      <p class="mb-8 text-center">
-        <?= $description ?>
-      </p>
-      <div class="">
-        <a href="#" class="button button--yellow mb-6 w-full">
-          more info
-        </a>
-        <a href="#" class="button w-full">
-          Get book
-        </a>
-      </div>
-    </div>
-  </div>
-<?php
-}
+$books_sub_field = get_sub_field('books');
+$book_id_list = array_map(fn ($value) => $value['book'], $books_sub_field);
 ?>
 
 <!-- Books -->
@@ -64,16 +32,8 @@ function print_book_card($id)
       <p class="subheading text-neutral-900 text-center mb-8 relative">
         <?= $subheading ?>
       </p>
-      <!-- Items -->
-      <div class="flex flex-col items-center lg:gap-12 lg:flex-row lg:justify-center lg:items-start relative">
-
-        <?php
-        foreach ($books as $item) {
-          print_book_card($item['book']);
-        }
-        ?>
-
-      </div>
+      <!-- BookCardList -->
+      <?php get_template_part('template-parts/components/component', 'book-card-list', array('book_id_list' => $book_id_list)) ?>
     </div>
   </div>
 </section>
