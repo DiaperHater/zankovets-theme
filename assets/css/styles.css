@@ -2132,6 +2132,10 @@ body {
   margin-top: 76px;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3702,6 +3706,14 @@ body {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-\[3em\] {
+  padding-left: 3em;
+}
+
+.pl-\[1em\] {
+  padding-left: 1em;
 }
 
 .text-left {
@@ -6376,6 +6388,10 @@ body {
     align-items: flex-start;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
@@ -6444,8 +6460,16 @@ body {
     flex-direction: row;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-x-4 {
@@ -6531,4 +6555,37 @@ body {
   .xl\:\[\&\:nth-child\(3\)\]\:col-span-4:nth-child(3) {
     grid-column: span 4 / span 4;
   }
+}
+
+.\[\&_svg\]\:h-12 svg {
+  height: 3rem;
+}
+
+.\[\&_svg\]\:h-6 svg {
+  height: 1.5rem;
+}
+
+.\[\&_svg\]\:h-8 svg {
+  height: 2rem;
+}
+
+.\[\&_svg\]\:h-auto svg {
+  height: auto;
+}
+
+.\[\&_svg\]\:w-12 svg {
+  width: 3rem;
+}
+
+.\[\&_svg\]\:w-6 svg {
+  width: 1.5rem;
+}
+
+.\[\&_svg\]\:w-8 svg {
+  width: 2rem;
+}
+
+.\[\&_svg\]\:text-neutral-900 svg {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
 }
