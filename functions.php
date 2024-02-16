@@ -93,6 +93,26 @@ function register_custom_post_types()
   );
 
   register_post_type(
+    'service',
+    array(
+      'labels'      => array(
+        'name'          => __('Services', 'zankovets'),
+        'singular_name' => __('Service', 'zankovets'),
+      ),
+      'public'      => true,
+      'has_archive' => false,
+      'menu_icon' => 'dashicons-cart',
+      'supports' => array('title', 'thumbnail', 'excerpt'),
+      'rewrite' => array(
+        'with_front' => false,
+        'slug' => 'services'
+      ),
+      'show_in_rest' => true,
+      'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+    )
+  );
+
+  register_post_type(
     'article',
     array(
       'labels'      => array(

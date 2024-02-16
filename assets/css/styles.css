@@ -447,6 +447,7 @@ video {
 html {
   font-family: "Roboto Condenced";
   color: white;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1857,6 +1858,7 @@ body {
 }
 
 .prose figure {
+  margin-top: 0px;
   overflow: hidden;
   border-radius: 0.75rem;
   border-width: 2px;
@@ -1876,6 +1878,15 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.prose figure>img {
+  height: 100% !important;
+  width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .sr-only {
@@ -5088,6 +5099,7 @@ body {
   }
 
   .sm\:prose figure {
+    margin-top: 0px;
     overflow: hidden;
     border-radius: 0.75rem;
     border-width: 2px;
@@ -5104,6 +5116,15 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  .sm\:prose figure>img {
+    height: 100% !important;
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 
@@ -5947,6 +5968,7 @@ body {
   }
 
   .dark\:prose figure {
+    margin-top: 0px;
     overflow: hidden;
     border-radius: 0.75rem;
     border-width: 2px;
@@ -5963,6 +5985,15 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  .dark\:prose figure>img {
+    height: 100% !important;
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 
@@ -5995,6 +6026,23 @@ body {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:nth-child(odd) .group-odd\:right-\[160px\] {
+  right: 160px;
+}
+
+.group:nth-child(odd) .group-odd\:col-start-7 {
+  grid-column-start: 7;
+}
+
+.group:nth-child(odd) .group-odd\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:nth-child(even) .group-even\:left-\[160px\] {
+  left: 160px;
 }
 
 .group:hover .group-hover\:scale-110 {
@@ -6348,10 +6396,6 @@ body {
     grid-column: span 6 / span 6;
   }
 
-  .lg\:col-start-7 {
-    grid-column-start: 7;
-  }
-
   .lg\:row-start-1 {
     grid-row-start: 1;
   }
@@ -6418,6 +6462,10 @@ body {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .group:nth-child(even) .group-even\:lg\:col-start-7 {
+    grid-column-start: 7;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -6456,6 +6504,14 @@ body {
 
   .group:first-child .xl\:group-first\:aspect-\[4\/3\] {
     aspect-ratio: 4/3;
+  }
+
+  .group:nth-child(odd) .group-odd\:xl\:right-\[240px\] {
+    right: 240px;
+  }
+
+  .group:nth-child(even) .group-even\:xl\:left-\[240px\] {
+    left: 240px;
   }
 }
 

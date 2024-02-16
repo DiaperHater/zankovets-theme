@@ -7,10 +7,13 @@ $blocks = parse_blocks($content);
 ?>
 
 
-<section class="pb-24 <?= $post->post_type == 'book' ? 'pt-24' : '' ?> bg-white text-neutral-900">
+<section class="pb-24 <?= $post->post_type == 'book' || $post->post_type == 'service' ? 'pt-24' : '' ?> bg-white text-neutral-900">
 
   <?php
-  if ($post->post_type != 'book') {
+  if (
+    $post->post_type != 'book'
+    && $post->post_type != 'service'
+  ) {
   ?>
     <!-- Hero -->
     <div class="pt-24 pb-12 mb-24 relative">
@@ -73,11 +76,19 @@ if ($post->post_type == 'book') {
   ));
   // GetBookForm
   get_template_part('template-parts/content/section', 'get-book-form');
+} elseif ($post->post_type == 'service') {
+
+  // Testimonials
+  get_template_part('template-parts/content/section', 'testimonials', array(
+    'heading' => 'Customer Reviews',
+    'terms' => 'service-consumer'
+  ));
+  // GetServiceForm
+  get_template_part('template-parts/content/section', 'get-service-form');
+} else {
+
+  get_template_part('template-parts/content/section', 'contact-form');
 }
 ?>
-
-<?php get_template_part('template-parts/content/section', 'contact-form') ?>
-
-
 
 <?php get_footer() ?>

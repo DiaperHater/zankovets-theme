@@ -15,7 +15,7 @@
             <a href="/about" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               About
             </a>
-            <a href="#" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
+            <a href="/services" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">
               Services
             </a>
             <a href="/blog" class="text-base text-yellow-300 uppercase duration-200 hover:text-yellow-500  decoration-4 underline-offset-4 hover:underline">

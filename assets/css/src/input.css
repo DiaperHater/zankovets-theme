@@ -6,6 +6,7 @@
   html {
     font-family: "Roboto Condenced";
     color: white;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -167,7 +168,7 @@
   }
 
   .prose figure {
-    @apply border-2 border-yellow-400 rounded-xl shadow-lg overflow-hidden;
+    @apply border-2 border-yellow-400 rounded-xl shadow-lg overflow-hidden mt-0;
   }
 
   .prose figure.alignleft,
@@ -175,5 +176,9 @@
   .prose figure.alignnone,
   .prose figure.aligncenter {
     @apply max-lg:float-none max-lg:mx-auto;
+  }
+
+  .prose figure>img {
+    @apply !w-full !h-full object-cover object-center;
   }
 }
