@@ -1,6 +1,6 @@
 <?php
 
-define('DEBUG', true);
+define('DEBUG', false);
 
 if (!defined('S_VERSION')) {
   define('S_VERSION', DEBUG ? microtime() : '1.0.0');

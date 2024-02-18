@@ -24,7 +24,7 @@ $articles = get_sub_field('articles');
         <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $services['description'] ?>
         </p>
-        <a href="#" class="button">View</a>
+        <a href="/services" class="button">View</a>
       </div>
     </div>
     <!-- Card 2 -->
@@ -43,7 +43,7 @@ $articles = get_sub_field('articles');
         <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $books['description'] ?>
         </p>
-        <a href="#" class="button">View</a>
+        <a href="/books" class="button">View</a>
       </div>
     </div>
     <!-- Card 3 -->
@@ -62,7 +62,7 @@ $articles = get_sub_field('articles');
         <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $blog['description'] ?>
         </p>
-        <a href="#" class="button">View</a>
+        <a href="/blog" class="button">View</a>
       </div>
     </div>
     <!-- Card 4 -->
@@ -81,7 +81,7 @@ $articles = get_sub_field('articles');
         <p class="text-center text-xl font-light max-w-[500px] mb-6">
           <?= $articles['description'] ?>
         </p>
-        <a href="#" class="button">View</a>
+        <a href="/articles" class="button">View</a>
       </div>
     </div>
   </div>
