@@ -34,7 +34,7 @@ $args = wp_parse_args($args, array(
           <a href="<?= get_permalink($id) ?>" class="button button--yellow mb-6 w-full">
             more info
           </a>
-          <a href="#get-book-form" class="button w-full">
+          <a href="#form" class="button w-full">
             Get book
           </a>
         </div>
