@@ -12,7 +12,7 @@ $heading = $args['heading'];
 $text = $args['text'];
 $link = $args['link'];
 $video = $args['video'];
-$image = $args['image'];
+$image = $args['image'] ? $args['image']['sizes']['medium_large'] : false;
 ?>
 
 <!-- TextAndMedia -->
@@ -32,12 +32,12 @@ $image = $args['image'];
       <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74951 473.183L127 210L1.74951 -53.1828L1.74951 -0.651279L102 210L1.74951 420.651L1.74951 473.183Z" class="fill-yellow-300" />
     </g>
   </svg>
-  <div class="wrapper relative">
+  <div class="relative wrapper">
     <div class="box">
       <!-- Inner -->
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-6">
         <!-- Heading (mobile only) -->
-        <h2 class="heading mb-8 text-neutral-900 lg:hidden">
+        <h2 class="mb-8 heading text-neutral-900 lg:hidden">
           <?= $heading ?>
         </h2>
         <!-- Media -->
@@ -45,9 +45,9 @@ $image = $args['image'];
 
         if ($video) {
         ?>
-          <figure class="border-2 border-yellow-300 shadow-lg rounded-xl overflow-hidden relative group cursor-pointer h-fit mb-8 lg:mb-0 lg:col-span-6 group-even:lg:col-start-7" onclick="playPauseVideo(this)">
-            <video src="<?= $video ?>" muted loop class=""></video>
-            <button class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-200 group-hover:text-yellow-500">
+          <figure class="relative mb-8 overflow-hidden border-2 border-yellow-300 shadow-lg cursor-pointer rounded-xl group h-fit lg:mb-0 lg:col-span-6 group-even:lg:col-start-7" onclick="playPauseVideo(this)">
+            <video src="<?= $video ?>" muted loop playsinline class="object-cover object-center" poster="<?= $image ?>"></video>
+            <button class="absolute duration-200 -translate-x-1/2 -translate-y-1/2 play-button top-1/2 left-1/2 group-hover:text-yellow-500">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
@@ -58,8 +58,8 @@ $image = $args['image'];
 
         } else {
         ?>
-          <figure class="border-2 border-yellow-300 shadow-lg rounded-xl overflow-hidden aspect-video mb-8 lg:mb-0 lg:col-span-6 group-even:lg:col-start-7">
-            <img src="<?= $image ?>" alt="<?= $heading ?>" class="w-full h-full object-cover object-center">
+          <figure class="mb-8 overflow-hidden border-2 border-yellow-300 shadow-lg rounded-xl aspect-video lg:mb-0 lg:col-span-6 group-even:lg:col-start-7">
+            <img src="<?= $image ?>" alt="<?= $heading ?>" class="object-cover object-center w-full h-full">
           </figure>
         <?php
         }
@@ -67,11 +67,11 @@ $image = $args['image'];
         <!-- TextContent -->
         <div class="lg:col-span-6 group-odd:col-start-7 lg:row-start-1">
           <!-- Heading (desktop only) -->
-          <h2 class="hidden heading mb-8 text-neutral-900 lg:block">
+          <h2 class="hidden mb-8 heading text-neutral-900 lg:block">
             <?= $heading ?>
           </h2>
           <!-- Text -->
-          <p class="mb-6 text-neutral-900 text-xl">
+          <p class="mb-6 text-xl text-neutral-900">
             <?= $text ?>
           </p>
           <!-- Button -->
