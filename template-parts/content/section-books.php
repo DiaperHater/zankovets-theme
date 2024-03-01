@@ -7,13 +7,12 @@ $book_id_list = array_map(fn ($value) => $value['book'], $books_sub_field);
 ?>
 
 <!-- Books -->
-<section class="bg-white py-24">
+<section class="py-24 bg-white">
   <div class="wrapper">
     <div class="box">
       <!-- Heading -->
-      <h2 class="heading text-neutral-900 text-center mb-8 relative w-max mx-auto">
-        <?= $heading ?>
-        <svg viewBox="0 0 420 177" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-1/2 -translate-x-1/2 w-[150%]">
+      <h2 class="relative mx-auto mb-8 text-center heading text-neutral-900">
+        <svg viewBox="0 0 420 177" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] max-w-[80vw]">
           <mask id="mask0_847268_611" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="50" width="420" height="127">
             <rect x="420" y="177" width="420" height="127" transform="rotate(-180 420 177)" fill="#D9D9D9" />
           </mask>
@@ -27,9 +26,10 @@ $book_id_list = array_map(fn ($value) => $value['book'], $books_sub_field);
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-53.1825 1.75L210 127L473.183 1.75H420.652L210 102L-0.651001 1.75L-53.1825 1.75Z" class="fill-yellow-300" />
           </g>
         </svg>
+        <span class="relative"><?= $heading ?></span>
       </h2>
       <!-- Subheading -->
-      <p class="subheading text-neutral-900 text-center mb-8 relative">
+      <p class="relative mb-8 text-center subheading text-neutral-900">
         <?= $subheading ?>
       </p>
       <!-- BookCardList -->
