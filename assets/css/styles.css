@@ -2004,10 +2004,6 @@ body {
   z-index: 50;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -2352,11 +2348,6 @@ body {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2369,20 +2360,16 @@ body {
   max-width: 500px;
 }
 
+.max-w-\[80vw\] {
+  max-width: 80vw;
+}
+
 .max-w-full {
   max-width: 100%;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[100vw\] {
-  max-width: 100vw;
-}
-
-.max-w-\[80vw\] {
-  max-width: 80vw;
 }
 
 .flex-shrink {

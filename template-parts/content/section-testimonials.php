@@ -33,11 +33,11 @@ function print_testimonial($id)
   $text = get_field('text', $id);
 ?>
   <!-- Slide -->
-  <div class="swiper-slide px-4 pt-4 pb-8 border-2 border-yellow-300 rounded-xl shadow-xl">
+  <div class="px-4 pt-4 pb-8 border-2 border-yellow-300 shadow-xl swiper-slide rounded-xl">
     <!-- Head -->
     <div class="flex relative pt-16 mb-8 sm:pt-0 sm:pl-[160px]">
       <!-- Ava -->
-      <img src="<?= $ava['sizes']['thumbnail'] ?>" alt="<?= $ava['alt'] ?>" class="shadow-xl w-[120px] rounded-full absolute top-0 left-1/2 -translate-y-2/3 -translate-x-1/2 sm:-translate-y-[57%] sm:left-0 sm:translate-x-0 sm:w-[140px]">
+      <img src="<?= $ava['sizes']['thumbnail'] ?>" alt="<?= $ava['alt'] ?>" class="shadow-xl w-[120px] rounded-full absolute top-0 left-1/2 -translate-y-2/3 -translate-x-1/2 bg-white sm:-translate-y-[57%] sm:left-0 sm:translate-x-0 sm:w-[140px]">
       <!-- Info -->
       <div class="">
         <p class="text-2xl mb-1.5 text-neutral-900">
@@ -49,7 +49,7 @@ function print_testimonial($id)
       </div>
     </div>
     <!-- Body -->
-    <p class="italic font-light text-neutral-900 text-2xl">
+    <p class="text-2xl italic font-light text-neutral-900">
       "<?= $text ?>"
     </p>
   </div>
@@ -60,12 +60,12 @@ function print_testimonial($id)
 
 
 <!-- Testimonials -->
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-24 overflow-hidden bg-white">
   <div class="wrapper">
     <div class="box">
       <!-- Inner -->
       <div class="">
-        <h2 class="heading text-neutral-900 text-center mb-32">
+        <h2 class="mb-32 text-center heading text-neutral-900">
           <?= $args['heading'] ?: 'Testimonials' ?>
         </h2>
         <!-- Slider -->
