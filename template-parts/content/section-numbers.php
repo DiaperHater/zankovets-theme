@@ -42,7 +42,7 @@ function print_item($itm)
         <p class="h-[67px] flex items-center justify-center text-xl font-semibold text-center uppercase">
           <?= $itm['text'] ?>
         </p>
-        <p class="text-6xl font-semibold text-center uppercase p-2 pb-0 mt-2">
+        <p class="p-2 pb-0 mt-2 text-6xl font-semibold text-center uppercase">
           <?= $itm['number'] ?>
         </p>
       </div>
@@ -54,11 +54,11 @@ function print_item($itm)
 ?>
 
 <!-- Numbers -->
-<section class="pt-24 pb-12 bg-white relative overflow-hidden numbers-section">
+<section class="relative py-24 overflow-hidden bg-neutral-900 numbers-section">
   <div class="wrapper">
     <div class="box-sm">
       <!-- Items -->
-      <div class="flex flex-wrap gap-y-16 justify-center">
+      <div class="flex flex-wrap justify-center gap-y-16">
         <?php
         foreach ($items as $item) {
           print_item($item);
