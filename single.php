@@ -55,6 +55,13 @@ $blocks = parse_blocks($content);
         foreach ($blocks as $block) {
           if ("core/shortcode" == $block['blockName']) {
             echo do_shortcode('[socials]');
+          } elseif ("core/embed" == $block['blockName']) {
+
+            $url =  $block['attrs']['url'];
+            $rendered_block = render_block($block);
+            $out = str_replace($url, wp_oembed_get($url), $rendered_block);
+
+            echo $out;
           } else {
             echo render_block($block);
           }

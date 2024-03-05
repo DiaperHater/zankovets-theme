@@ -3,7 +3,7 @@
 define('DEBUG', false);
 
 if (!defined('S_VERSION')) {
-  define('S_VERSION', DEBUG ? microtime() : '1.0.0');
+  define('S_VERSION', DEBUG ? microtime() : '1.0.1');
 }
 
 add_theme_support('title-tag');

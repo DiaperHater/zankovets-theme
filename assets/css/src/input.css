@@ -30,7 +30,7 @@
 
   .button,
   .wp-block-button__link.wp-element-button {
-    @apply w-fit py-3 px-12 uppercase text-white font-semibold text-base leading-none flex items-center justify-center bg-neutral-900 rounded-lg border-2 border-yellow-500 duration-200;
+    @apply flex items-center justify-center px-12 py-3 text-base font-semibold leading-none text-white uppercase duration-200 border-2 border-yellow-500 rounded-lg w-fit bg-neutral-900;
 
     position: relative;
   }
@@ -72,7 +72,7 @@
   }
 
   .heading {
-    @apply font-bold text-5xl md:text-6xl;
+    @apply text-5xl font-bold md:text-6xl;
   }
 
   .subheading {
@@ -97,7 +97,7 @@
   }
 
   .contact-form-wrapper .custom-form-input {
-    @apply block bg-neutral-700 w-full text-white font-light p-2 outline-none;
+    @apply block w-full p-2 font-light text-white outline-none bg-neutral-700;
   }
 
   .contact-form-wrapper .custom-form-input:focus {
@@ -130,7 +130,7 @@
 
   .book-form-wrapper .custom-form-input,
   .book-form-wrapper .wpcf7-select {
-    @apply block bg-neutral-700 w-full text-white font-light p-2 outline-none;
+    @apply block w-full p-2 font-light text-white outline-none bg-neutral-700;
   }
 
   .book-form-wrapper .custom-form-input:focus,
@@ -154,7 +154,7 @@
     background: url(/wp-content/themes/zankovets/assets/images/arrow-down-icon.svg) no-repeat;
     background-position: center right 4px;
     background-size: 24px;
-    @apply appearance-none bg-neutral-700 text-neutral-400 cursor-pointer;
+    @apply appearance-none cursor-pointer bg-neutral-700 text-neutral-400;
   }
 
   /* Prose Content */
@@ -168,7 +168,7 @@
   }
 
   .prose figure {
-    @apply border-2 border-yellow-400 rounded-xl shadow-lg overflow-hidden mt-0;
+    @apply mt-0 overflow-hidden border-2 border-yellow-400 shadow-lg rounded-xl;
   }
 
   .prose figure.alignleft,
@@ -178,7 +178,12 @@
     @apply max-lg:float-none max-lg:mx-auto;
   }
 
-  .prose figure>img {
+  .prose figure>img,
+  .prose figure iframe {
     @apply !w-full !h-full object-cover object-center;
+  }
+
+  .prose figure iframe {
+    @apply !w-full !aspect-video;
   }
 }
